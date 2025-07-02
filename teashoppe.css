@@ -10,6 +10,14 @@ body {
   color: #d6a592;
 }
 
+.mobile-only {
+  display: block;
+}
+
+.tablet-only {
+  display: none;
+}
+
 .content {
   flex: 1;
 }
@@ -114,5 +122,85 @@ h2 {
   margin: 15px 0;
   padding: 10px;
   text-align: right;
-  color: #000000;
+  color: #f0f0f0;
+}
+
+/* Responsive CSS for tablets */
+@media screen and (width >= 700px) {
+  .location {
+    font-size: 15px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .header-right {
+    padding: 0 30px;
+  }
+
+  .header img {
+    width: 200px;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .menu {
+    font-size: 24px;
+    gap: 40px;
+  }
+
+  .about {
+    font-size: 15px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
+}
+
+/* Responsive CSS for the largest screens */
+@media screen and (width >= 1000px) {
+  .location {
+    font-size: 20px;
+  }
+
+  .mobile-only {
+    display: none;
+  }
+
+  .tablet-only {
+    display: block;
+  }
+
+  .header-right {
+    padding: 0 100px;
+  }
+
+  .header img {
+    width: 200px;
+  }
+
+  .page-title {
+    font-size: 40px;
+  }
+
+  .menu {
+    font-size: 24px;
+    gap: 40px;
+  }
+
+  .about {
+    font-size: 20px;
+  }
+
+  .footer {
+    font-size: 15px;
+  }
 }
