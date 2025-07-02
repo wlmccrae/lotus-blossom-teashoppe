@@ -17,6 +17,16 @@ body {
 .header {
   background: rgba(122, 51, 45, 0.5);
   border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.header img {
+  width: 100px;
+  height: auto;
+  border-radius: 10px;
 }
 
 a:link, a:visited {
@@ -67,7 +77,7 @@ p {
   display: flex;
   flex-direction: column;
   text-align: left;
-  color: #303030;
+  color: #f0f0f0;
 }
 
 h2 {
@@ -101,7 +111,7 @@ h2 {
 .footer {
   background: rgba(122, 51, 45, 0.2);
   border-radius: 10px;
-  margin: 5px;
+  margin: 15px 0;
   padding: 10px;
   text-align: right;
   color: #000000;
